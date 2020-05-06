@@ -7,7 +7,7 @@ body{
 .title{
     font-size: 36px;
     margin-top: 10px;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     padding: 0;
     color: #141c3a;
     text-transform: uppercase;
@@ -22,13 +22,12 @@ body{
     letter-spacing: 1px;
     font-style: italic;
 }
-.piano{
+.piano {
     width: 305px;
     height: 210px;
     display: block;
-    margin: 0 auto;
     background-color: #fd4d3f;
-    margin-top: 30px;
+    margin: 30px auto 0;
 }
 .key{
     width: 30px;
@@ -39,7 +38,7 @@ body{
     background-color: white;
     color: #141c3a;
 }
-.black-key{
+.black-key {
     width: 25px;
     height: 100px;
     display: inline-block;
@@ -47,32 +46,29 @@ body{
     color: white;
     position: absolute;
     margin-left: -12px;
-    padding: 0px;
+    padding: 0;
 }
-.keynote{
+.keynote {
     width: 20px;
     height: 20px;
     text-align: center;
     display: block;
-    margin: 0 auto;
-    margin-top: 175px;
+    margin: 175px auto 0;
     color: #141c3a;
 }
-.black-keynote{
+.black-keynote {
     width: 20px;
     height: 20px;
     text-align: center;
     display: block;
-    margin: 0 auto;
-    margin-top: 75px;
+    margin: 75px auto 0;
 }
-#lyrics{
+#lyrics {
     width: 400px;
     height: 240px;
     display: block;
-    margin: 0 auto;
     padding-left: 20px;
-    margin-top: 50px;
+    margin: 50px auto 0;
     background-color: #fd4d3f;
 }
 #column-one, #column-two, #column-three, #column-four, #column-five, #column-six, #column-optional{
