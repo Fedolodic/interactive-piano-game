@@ -5,7 +5,7 @@ keys.forEach(function (key) {
     notes.push(document.getElementById(key));
 })
 
-// Write named functions that change the color of the keys below
+// Functions that change the color of the keys below
 const keyPlay = e => {
     e.target.style.backgroundColor = '#F25792';
 };
@@ -13,13 +13,13 @@ const keyReturn = e => {
     e.target.style.backgroundColor = '';
 };
 
-// Write a named function with event handler properties
+// Function with event handler properties
 const eventAssignment = note => {
     note.addEventListener('mousedown', keyPlay);
     note.addEventListener('mouseup', keyReturn);
 };
 
-// Write a loop that runs the array elements through the function
+// Loop that runs the array elements through eventAssignment() function
 notes.forEach(eventAssignment);
 
 // These variables store the buttons that progress the user through the lyrics
@@ -34,9 +34,9 @@ let lastLyric = document.getElementById('column-optional');
 // These statements are "hiding" all the progress buttons, but the first one
 nextTwo.hidden = true;
 nextThree.hidden = true;
-startOver.hidden= true;
+startOver.hidden = true;
 
-// Write anonymous event handler property and function for the first progress button
+// Anonymous event handler property and function for the first progress button
 nextOne.addEventListener('click', () => {
     nextTwo.hidden = false;
     nextOne.hidden = true;
@@ -44,14 +44,24 @@ nextOne.addEventListener('click', () => {
     document.getElementById('letter-note-six').innerHTML = 'C';
 });
 
-// Write anonymous event handler property and function for the second progress button
-
+// Anonymous event handler property and function for the second progress button
+nextTwo.addEventListener('click', () => {
+    nextThree.hidden = false;
+    nextTwo.hidden = true;
+    document.getElementById('word-five').innerHTML = 'DEAR';
+    document.getElementById('word-six').innerHTML = 'FRI-';
+    lastLyric.style.display = 'inline-block';
+    document.getElementById('letter-note-three').innerHTML = 'G';
+    document.getElementById('letter-note-four').innerHTML = 'E';
+    document.getElementById('letter-note-five').innerHTML = 'C';
+    document.getElementById('letter-note-six').innerHTML = 'B';
+})
 
 // Write anonymous event handler property and function for the third progress button
 
 
 // This is the event handler property and function for the startOver button
-startOver.onclick = function() {
+startOver.onclick = function () {
     nextOne.hidden = false;
     startOver.hidden = true;
     document.getElementById('word-one').innerHTML = 'HAP-';
