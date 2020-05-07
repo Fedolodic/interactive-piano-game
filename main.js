@@ -13,6 +13,12 @@ const keyReturn = e => {
     e.target.style.backgroundColor = "";
 };
 
+// Write a named function with event handler properties
+const eventAssignment = note => {
+    note.addEventListener("mousedown", keyPlay);
+    note.addEventListener("mouseup", keyReturn);
+};
+
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
 let nextTwo = document.getElementById('second-next-line');
