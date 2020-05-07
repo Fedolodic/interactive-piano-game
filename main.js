@@ -19,6 +19,9 @@ const eventAssignment = note => {
     note.addEventListener("mouseup", keyReturn);
 };
 
+// Write a loop that runs the array elements through the function
+notes.forEach(eventAssignment);
+
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
 let nextTwo = document.getElementById('second-next-line');
