@@ -7,16 +7,16 @@ keys.forEach(function (key) {
 
 // Write named functions that change the color of the keys below
 const keyPlay = e => {
-    e.target.style.backgroundColor = "#2b2c1b";
+    e.target.style.backgroundColor = '#F25792';
 };
 const keyReturn = e => {
-    e.target.style.backgroundColor = "";
+    e.target.style.backgroundColor = '';
 };
 
 // Write a named function with event handler properties
 const eventAssignment = note => {
-    note.addEventListener("mousedown", keyPlay);
-    note.addEventListener("mouseup", keyReturn);
+    note.addEventListener('mousedown', keyPlay);
+    note.addEventListener('mouseup', keyReturn);
 };
 
 // Write a loop that runs the array elements through the function
@@ -37,7 +37,12 @@ nextThree.hidden = true;
 startOver.hidden= true;
 
 // Write anonymous event handler property and function for the first progress button
-
+nextOne.addEventListener('click', () => {
+    nextTwo.hidden = false;
+    nextOne.hidden = true;
+    document.getElementById('letter-note-five').innerHTML = 'D';
+    document.getElementById('letter-note-six').innerHTML = 'C';
+});
 
 // Write anonymous event handler property and function for the second progress button
 
